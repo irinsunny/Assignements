@@ -1,0 +1,23 @@
+/* body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s;
+} */
+.color-option {
+    border: 2px solid black;
+    /* Border with 2px width and solid black color */
+    padding: 10px;
+    /* Padding to create space between the text and the border */
+    display: inline-block;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#green {
+    color: green;
+}

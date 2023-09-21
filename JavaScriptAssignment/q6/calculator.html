@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/DemoJavaScript2023/css/css/bootstrap.min.css">
+    <style>
+        .customContainer {
+            background-color: #F4D7AD;
+            max-width: 1000px;
+            margin: 100px auto;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .b {
+            border: 5px;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .large-button {
+            width: 50px;
+            /* Set the desired width */
+            height: 50px;
+            /* Set the desired height */
+            font-size: 20px;
+            /* Adjust the font size as needed */
+            
+        }
+        .large-text
+        {
+            width: 210px;
+            /* Set the desired width */
+            height: 50px;
+            /* Set the desired height */
+          
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class=" customContainer">
+
+        <h1>Simple Calculator </h1>
+        <div class="b">
+            <input class= " large-text" type="text" id="display" readonly>
+            <br> <br>
+            <button class="large-button" onclick="appendToDisplay('1')">1</button>
+            <button class="large-button" onclick="appendToDisplay('2')">2</button>
+            <button class="large-button" onclick="appendToDisplay('3')">3</button>
+            <button class="large-button" onclick="appendToDisplay('+')">+</button>
+            <br>
+            <button class="large-button" onclick="appendToDisplay('4')">4</button>
+            <button class="large-button" onclick="appendToDisplay('5')">5</button>
+            <button class="large-button" onclick="appendToDisplay('6')">6</button>
+            <button class="large-button" onclick="appendToDisplay('-')">-</button>
+            <br>
+            <button class="large-button" onclick="appendToDisplay('7')">7</button>
+            <button class="large-button" onclick="appendToDisplay('8')">8</button>
+            <button class="large-button" onclick="appendToDisplay('9')">9</button>
+            <button class="large-button" onclick="appendToDisplay('*')">*</button>
+            <br>
+            <button class="large-button" onclick="appendToDisplay('0')">0</button>
+            <button class="large-button" onclick="clearDisplay()">C</button>
+            <button class="large-button" onclick="calculateResult()">=</button>
+            <button class="large-button"  onclick="appendToDisplay('/')">/</button>
+        </div>
+    </div>
+    <script src="/DemoJavaScript2023/js/calculator.js"></script>
+</body>
+
+</html>
